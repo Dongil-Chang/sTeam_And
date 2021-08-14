@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--tools:context=".MainActivity"-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Login Page"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#5f4b8b"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:weightSum="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/loginId"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="아이디"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/loginPwd"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="비밀번호"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_weight="0.8"
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="로그인"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="#00498C"
+                android:layout_marginRight="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/loginCheck"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="자동 로그인"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/loginHelp"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="아이디 비밀번호찾기"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="right|center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/loginToReg"
+                android:layout_weight="0.84"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="회원가입"
+                android:textStyle="bold"
+                android:layout_gravity="left|center"
+                android:backgroundTint="#789"/>
+
+
+
+            <Button
+                android:id="@+id/loginKakao"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.84"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="카카오 로그인"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/start_login_btn_kakano"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:backgroundTint="#f7e600"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center|top">
+
+            <Button
+                android:id="@+id/loginGoogle"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.84"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="구글 로그인"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/start_login_btn_google"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:backgroundTint="#ea4335"/>
+
+            <Button
+                android:id="@+id/loginNaver"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.84"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="네이버 로그인"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/start_login_btn_naver"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:backgroundTint="#00C43B"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/kakao_login"-->
+    <!--        android:layout_weight="0.9"-->
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:src="@drawable/kakao"-->
+    <!--        android:padding="0dp"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        android:backgroundTint="#f7e600"/>-->
+    <!--    &lt;!&ndash; scaleType : 이미지를 위젯크기에 딱 맞게 수정하는 작업 &ndash;&gt;-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/google_login"-->
+    <!--        android:layout_weight="0.9"-->
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:src="@drawable/google"-->
+    <!--        android:padding="0dp"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        android:backgroundTint="#ea4335"/>-->
+    <!--    &lt;!&ndash; scaleType : 이미지를 위젯크기에 딱 맞게 수정하는 작업 &ndash;&gt;-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/naver_login"-->
+    <!--        android:layout_weight="0.9"-->
+    <!--        android:layout_width="320dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:src="@drawable/naver"-->
+    <!--        android:padding="0dp"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        android:backgroundTint="#00C43B"/>-->
+    <!--    &lt;!&ndash; scaleType : 이미지를 위젯크기에 딱 맞게 수정하는 작업 &ndash;&gt;-->
+
+</LinearLayout>

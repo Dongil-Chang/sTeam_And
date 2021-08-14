@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <!-- 글 제목 -->
+    <TextView
+        android:id="@+id/tvScTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="커뮤니티 글 제목"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/commuScrModifyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정 "
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#113399"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/commuScrDelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 삭제"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#113399"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <!-- 글의 내용 -->
+    <TextView
+        android:id="@+id/commuScrContentTv"
+        android:layout_width="match_parent"
+        android:layout_height="464dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="내용"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/commuScrCmtTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="댓글보기"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#113399"
+        android:layout_gravity="right"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>

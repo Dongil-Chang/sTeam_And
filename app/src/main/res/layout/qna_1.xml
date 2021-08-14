@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 원균이 QnA랑 겹쳐서 일단 가져와봄 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/tvQnA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QnA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <!-- 글 목록 -->
+    <ListView
+        android:id="@+id/listvQnA"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_weight="4" />
+
+    <!--이 버튼 누르면 글 작성으로 넘어감-->
+    <Button
+        android:id="@+id/btnAddQnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="글작성"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

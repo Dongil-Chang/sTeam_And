@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_back_1"/>
+        <TextView
+            android:id="@+id/tv_Qna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QnA"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/qna_Check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지혜는 얼마나 너의 바이며, 쓸쓸한 것이다. 아니더면,
+                얼음에 인간은 같이 사랑의 때문이다."
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/qna_Check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지혜는 얼마나 너의 바이며, 쓸쓸한 것이다. 아니더면,
+                얼음에 인간은 같이 사랑의 때문이다."
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/qna_Check_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지혜는 얼마나 너의 바이며, 쓸쓸한 것이다. 아니더면,
+                얼음에 인간은 같이 사랑의 때문이다."
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/qna_Check_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지혜는 얼마나 너의 바이며, 쓸쓸한 것이다. 아니더면,
+                얼음에 인간은 같이 사랑의 때문이다."
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/qna_Check_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지혜는 얼마나 너의 바이며, 쓸쓸한 것이다. 아니더면,
+                얼음에 인간은 같이 사랑의 때문이다."
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/qna_Check_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지혜는 얼마나 너의 바이며, 쓸쓸한 것이다. 아니더면,
+                얼음에 인간은 같이 사랑의 때문이다."
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btn_Answer"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="답변하기"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/btn_Report"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="신고하기"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

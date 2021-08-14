@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:clickable="true">
+
+
+
+    <!--  페이지 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QnA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <!-- QnA 수정 -->
+        <TextView
+            android:id="@+id/QnaModifyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수정 "
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#113399"
+            android:layout_marginTop="15dp"/>
+
+        <!-- QnA 삭제 -->
+        <TextView
+            android:id="@+id/QnaDelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| 삭제"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#113399"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+    <!-- xml 파일 중 qna_view와 같이 쓰는것입니다.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/qnaRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 글작성 버튼 qna_writing.xml로 이동  -->
+    <Button
+        android:id="@+id/QnaAddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="글작성"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+</LinearLayout>

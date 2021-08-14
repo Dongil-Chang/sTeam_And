@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <!-- 칼럼을 쓴 사람의 프로필 사진-->
+        <ImageView
+            android:id="@+id/columnMyPageImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름 : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!-- 칼럼을 쓴 사람의 이름-->
+                <TextView
+                    android:id="@+id/columnMyPageNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="내용 "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매장명 : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!-- 칼럼을 쓴 사람의 매장명 -->
+                <TextView
+                    android:id="@+id/columnMyPageShopTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="내용 "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="매장 번호 : "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!-- 칼럼을 쓴 사람의 매장번호-->
+                <TextView
+                    android:id="@+id/columnMyPageTelTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="내용 "
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="매장 소개 : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_margin="15dp">
+
+        <!-- 칼럼 내용이 길면 스크롤 되게 스크롤 뷰로 했고 text 쪽은 예제??로 만들어봤습니다.-->
+        <TextView
+            android:id="@+id/columnMyPageShopInfoTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="sdf\n\n\n\n\n\n\n\nsfdg\n\n\n\n\n\n34"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성 칼럼 : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"/>
+
+
+
+        <!-- xml 파일 중 column_my_page_view와 같이 쓰는것입니다.-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/columnMyPageRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tvWrite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="글 작성"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <!-- 커뮤니티 제목 작성 -->
+    <EditText
+        android:id="@+id/commuWrTitleEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!-- 커뮤니티 내용 작성 -->
+    <EditText
+        android:id="@+id/commuWrContentEdt"
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="top"
+        android:hint="내용"
+        android:background="@drawable/border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 글 작성 등록하는 버튼 -->
+        <Button
+            android:id="@+id/commuWrAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="등록"
+            android:textSize="20dp"
+            android:layout_marginRight="4dp"/>
+
+        <!-- 등록 취소하는 버튼 -->
+        <Button
+            android:id="@+id/commuWrCanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="취소"
+            android:textSize="20dp"
+            android:layout_marginLeft="4dp"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

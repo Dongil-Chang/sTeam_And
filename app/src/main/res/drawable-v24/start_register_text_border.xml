@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--현재 이 xml은 fragment_register.xml에서만 사용되었습니다.-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#000000"/>
+            <solid android:color="#FFFFFF"/>
+        </shape>
+
+    </item>
+</layer-list>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <!-- 이쪽은 지도 공간 입니다-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/border"
+        android:text="지도 공간"
+        android:layout_margin="20dp"
+        android:gravity="center"/>
+
+   <!--  주변 샵을 나타내는 뷰
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopMapRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"/>-->
+
+
+
+
+</LinearLayout>

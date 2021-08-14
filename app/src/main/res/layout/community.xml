@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <!--이 버튼 누르면 글 작성으로 넘어감-->
+
+
+
+
+        <!--  페이지명 -->
+        <TextView
+            android:id="@+id/tvComu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="커뮤니티"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- 검색 기능 -->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/seachview"
+            android:gravity="center"
+            android:iconifiedByDefault="false"
+            android:padding="5dp"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search" />
+
+        <!-- 글 목록 -->
+        <!-- xml 파일 중 community_view와 같이 쓰는것입니다.-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commuRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="493dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_action_add"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
